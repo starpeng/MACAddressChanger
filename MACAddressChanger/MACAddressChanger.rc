@@ -13,20 +13,64 @@
 #undef APSTUDIO_READONLY_SYMBOLS
 
 /////////////////////////////////////////////////////////////////////////////
-// German (Neutral) resources
+// 中文(简体，中国) resources
 
-#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_DEU)
-#ifdef _WIN32
-LANGUAGE LANG_GERMAN, SUBLANG_NEUTRAL
-#pragma code_page(1252)
-#endif //_WIN32
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
 
 /////////////////////////////////////////////////////////////////////////////
 //
 // String Table
 //
 
-STRINGTABLE 
+STRINGTABLE
+BEGIN
+    IDS_ABOUTBOX            "关于MAC地址修改器"
+    IDS_MSGBOXTITLE         "MAC地址修改器"
+    IDS_MACCHANGESUC        "MAC地址修改成功。"
+    IDS_MACRESETSUC         "MAC地址还原成功。"
+    IDS_MACCHANGEHALFSUC    "适配器不能修改，尝试使用禁用/启用的适配器更改生效。"
+    IDS_MACRESETHALFSUC     "适配器不能重置，尝试使用禁用/启用适配器来恢复原始MAC地址。"
+    IDS_REGACCESSERR        "操作失败，需要以管理员方式运行本程序。"
+    IDS_ADAPINFOERROR       "无法获得的网络适配器信息，你可能不具有访问权限或者你目前没有任何启用网络适配器。"
+    IDS_SUREEXIT            "确认关闭吗？"
+    IDS_INVALIDMACERR       "请输入有效的MAC地址"
+    IDS_BALLOONTITLE        "请输入你的首选MAC地址"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_BALLOONTIP          "MAC地址必须是6字节(48位)。\r\n示例: 00 B0 08 A0 C1 1B, 00 10 10 5C 34 D4"
+    IDS_PROGTITLE           "MAC地址修改器 适用于Windows XP/2003/Vista/7/2008 v1.2"
+    IDS_BTNEXIT             "退出程序"
+    IDS_BTNCHANGE           "修改MAC地址"
+    IDS_BTNRESET            "还原MAC地址"
+    IDS_STATICCHADAP        "选择一个网络适配器:"
+    IDS_STATICMACADDR       "MAC地址:"
+    IDS_ABTBOXTITLE         "关于MAC地址修改器"
+    IDS_STROK               "确定"
+    IDS_TXTVERSION          "版本"
+    IDS_STATICTOPTXT        "请注意，当您更改或重置MAC地址时，相关的网络适配器将停止并重新启动，这会导致网络连接暂时不可用。"
+END
+
+#endif    // 中文(简体，中国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// 德语 resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_DEU)
+LANGUAGE LANG_GERMAN, SUBLANG_NEUTRAL
+#pragma code_page(1252)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
 BEGIN
     IDS_ABOUTBOX            "&躡er MACAddressChanger..."
     IDS_MSGBOXTITLE         "MAC Address Changer "
@@ -41,7 +85,7 @@ BEGIN
     IDS_BALLOONTITLE        "Geben Sie Ihre bevorzugte MAC ID ein"
 END
 
-STRINGTABLE 
+STRINGTABLE
 BEGIN
     IDS_BALLOONTIP          "MAC IDs haben 6-byte (48-bit) Werte.\r\nBeispiele: 00 B0 08 A0 C1 1B, 00 10 10 5C 34 D4"
     IDS_PROGTITLE           "MAC Address Changer f黵 Windows XP/2003/Vista/7/2008 v1.2"
@@ -56,18 +100,16 @@ BEGIN
     IDS_STATICTOPTXT        "Beachten Sie, dass nach 膎derung der MAC-Adresse der gew鋒lte Adapter neu gestartet werden muss, um die 膎derungen zu 黚ernehmen. Dabei werden alle aktiven Netzwerkverbindungen getrennt."
 END
 
-#endif    // German (Neutral) resources
+#endif    // 德语 resources
 /////////////////////////////////////////////////////////////////////////////
 
 
 /////////////////////////////////////////////////////////////////////////////
-// English (U.S.) resources
+// 英语(美国) resources
 
 #if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
-#ifdef _WIN32
 LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
 #pragma code_page(1252)
-#endif //_WIN32
 
 #ifdef APSTUDIO_INVOKED
 /////////////////////////////////////////////////////////////////////////////
@@ -191,7 +233,7 @@ END
 //
 
 #ifdef APSTUDIO_INVOKED
-GUIDELINES DESIGNINFO 
+GUIDELINES DESIGNINFO
 BEGIN
     IDD_ABOUTBOX, DIALOG
     BEGIN
@@ -211,7 +253,53 @@ BEGIN
 END
 #endif    // APSTUDIO_INVOKED
 
-#endif    // English (U.S.) resources
+#endif    // 英语(美国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// 英语(英国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENG)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_UK
+#pragma code_page(1252)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDS_ABOUTBOX            "&躡er MACAddressChanger..."
+    IDS_MSGBOXTITLE         "MAC Address Changer "
+    IDS_MACCHANGESUC        "Die MAC ID des Adapters wurde erfolgreich ge鋘dert"
+    IDS_MACRESETSUC         "Die MAC ID des Adapters wurde erfolgreich zur點kgesetzt"
+    IDS_MACCHANGEHALFSUC    "Der Adapter konnte nicht zur點kgesetzt werden, Sie m黶sen dies manuell vornehmen"
+    IDS_MACRESETHALFSUC     "Der Adapter konnte nicht zur點kgesetzt werden, Sie m黶sen dies zum wiederherstellen der original MAC ID manuell vornehmen"
+    IDS_REGACCESSERR        "Die Operation konnte nicht durchgef黨rt werden, Sie haben keine Rechte, die Registry zu 膎dern"
+    IDS_ADAPINFOERROR       "Es wurden keine Adapter gefunden. Sie haben entweder keine Rechte in der Registry oder keine aktiven Adapter"
+    IDS_SUREEXIT            "Are you sure you want to close the app?"
+    IDS_INVALIDMACERR       "Bitte geben Sie eine g黮tige MAC ID ein"
+    IDS_BALLOONTITLE        "Geben Sie Ihre bevorzugte MAC ID ein"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_BALLOONTIP          "MAC IDs haben 6-byte (48-bit) Werte.\r\nBeispiele: 00 B0 08 A0 C1 1B, 00 10 10 5C 34 D4"
+    IDS_PROGTITLE           "MAC Address Changer f黵 Windows XP/2003/Vista/7/2008 v1.2"
+    IDS_BTNEXIT             "Beende Programm"
+    IDS_BTNCHANGE           "膎dere MAC ID"
+    IDS_BTNRESET            "Setze MAC ID zur點k"
+    IDS_STATICCHADAP        "Gefundene Adapter:"
+    IDS_STATICMACADDR       "MAC Adresse:"
+    IDS_ABTBOXTITLE         "躡er MAC Address Changer"
+    IDS_STROK               "OK"
+    IDS_TXTVERSION          "Version"
+    IDS_STATICTOPTXT        "Beachten Sie, dass nach 膎derung der MAC-Adresse der gew鋒lte Adapter neu gestartet werden muss, um die 膎derungen zu 黚ernehmen. Dabei werden alle aktiven Netzwerkverbindungen getrennt."
+END
+
+#endif    // 英语(英国) resources
 /////////////////////////////////////////////////////////////////////////////
 
 

@@ -424,9 +424,12 @@ BOOL CAboutDlg::OnInitDialog()
 
 	strTmp.LoadString(IDS_TXTVERSION);
 
+    CString strTitle;
+    strTitle.LoadString(IDS_PROGTITLE);
+
 	CVersionInfo vi;
 	CString crlf = _T("\r\n");
-	m_TxtAbout.SetWindowText(vi.GetValue(_T("ProductName")) + crlf
+    m_TxtAbout.SetWindowText(strTitle + crlf
 		+ strTmp + _T(" ") + vi.GetValue(_T("FileVersion")) + crlf
 		+ vi.GetValue(_T("LegalCopyright")));
 
